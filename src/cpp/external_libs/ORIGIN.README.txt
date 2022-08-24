@@ -1,0 +1,1 @@
+QR Lib: https://github.com/nayuki/QR-Code-generator/tree/master/cpp

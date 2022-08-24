@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">QRCode Generator</string>
+    <string name="tx">Content:</string>
+    <string name="clt">Clear Content</string>
+    <string name="errc">Error correction level:</string>
+    <string name="bgc">Background Color:</string>
+    <string name="fgc">Foreground Color:</string>
+    <string name="sizeField">Size of Unit:</string>
+    <string name="update">Update</string>
+    <string name="copy">©️Sharkbyteprojects</string>
+</resources>

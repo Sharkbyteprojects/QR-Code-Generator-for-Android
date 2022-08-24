@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="@string/tx" />
+
+            <EditText
+                android:id="@+id/textArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textMultiLine|textPersonName"
+                android:maxLines="255"
+                android:minHeight="48dp"
+                android:singleLine="false"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:layout_marginEnd="6dp"
+                tools:layout_marginStart="6dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/clearThis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/clt"
+                    tools:layout_marginEnd="9dp"
+                    tools:layout_marginStart="9dp" />
+
+                <Button
+                    android:id="@+id/update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/updatebtn"
+                    android:text="@string/update" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="@string/sizeField" />
+
+            <SeekBar
+                android:id="@+id/seekBarUnitSize"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:max="30"
+                tools:layout_marginEnd="6dp"
+                tools:layout_marginStart="6dp"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="@string/errc" />
+
+            <SeekBar
+                android:id="@+id/errCorrection"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="2"
+                android:progress="1"
+                tools:layout_marginEnd="6dp"
+                tools:layout_marginStart="6dp"/>
+
+            <TextView
+                android:id="@+id/bgc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="@string/bgc" />
+
+            <SeekBar
+                android:id="@+id/bgr"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:max="255"
+                android:progressTint="@color/red"
+                android:thumbTint="@color/red"
+                tools:layout_marginEnd="6dp"
+                tools:layout_marginStart="6dp" />
+
+            <SeekBar
+                android:id="@+id/bgg"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:max="255"
+                android:progressTint="@color/green"
+                android:thumbTint="@color/green"
+                tools:layout_marginEnd="6dp"
+                tools:layout_marginStart="6dp" />
+
+            <SeekBar
+                android:id="@+id/bgb"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:max="255"
+                android:progressTint="@color/blue"
+                android:thumbTint="@color/blue"
+                tools:layout_marginEnd="6dp"
+                tools:layout_marginStart="6dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="@string/fgc" />
+
+            <SeekBar
+                android:id="@+id/fgr"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:max="255"
+                android:progress="255"
+                android:progressTint="@color/red"
+                android:thumbTint="@color/red"
+                tools:layout_marginEnd="6dp"
+                tools:layout_marginStart="6dp" />
+
+            <SeekBar
+                android:id="@+id/fgg"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:max="255"
+                android:progress="255"
+                android:progressTint="@color/green"
+                android:thumbTint="@color/green"
+                tools:layout_marginEnd="6dp"
+                tools:layout_marginStart="6dp" />
+
+            <SeekBar
+                android:id="@+id/fgb"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:max="255"
+                android:progress="255"
+                android:progressTint="@color/blue"
+                android:thumbTint="@color/blue"
+                tools:layout_marginEnd="6dp"
+                tools:layout_marginStart="6dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/shareit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:clickable="true"
+                app:srcCompat="@android:drawable/ic_menu_share"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                tools:srcCompat="@tools:sample/avatars"
+                tools:layout_marginEnd="6dp"
+                tools:layout_marginStart="6dp"/>
+
+            <TextView
+                android:id="@+id/copyr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/copy"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
