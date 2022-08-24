@@ -15,6 +15,7 @@ Soon on Google Play
 
 
 ![Screenshot 2022-08-24 160229](https://user-images.githubusercontent.com/40953479/186441779-f6fb3be4-5fe6-4763-8873-ca790f271567.png)
+![Screenshot 2022-08-24 161805](https://user-images.githubusercontent.com/40953479/186442381-bbf86206-8ceb-4998-91f1-fc93a208f0be.png)
 
 ---
 
