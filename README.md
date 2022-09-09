@@ -1,7 +1,7 @@
 # QR-Code-Generator-for-Android
 QR Code Generator Android App
 
-[DOWNLOAD APK](https://github.com/Sharkbyteprojects/QR-Code-Generator-for-Android/releases/download/v1.0/app-release.apk)
+[DOWNLOAD APK](https://github.com/Sharkbyteprojects/QR-Code-Generator-for-Android/releases/download/v2.0/qrcode.generator.apk)
 
 Soon on Google Play
 
