@@ -24,20 +24,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="6dp"
-                android:text="@string/tx" />
+                android:text="@string/tx"
+                android:labelFor="@+id/textArea"/>
 
             <EditText
                 android:id="@+id/textArea"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:importantForAutofill="no"
                 android:inputType="textMultiLine|textPersonName"
                 android:maxLines="255"
                 android:minHeight="48dp"
                 android:singleLine="false"
-                tools:ignore="SpeakableTextPresentCheck"
+                tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck"
                 tools:layout_marginEnd="6dp"
-                tools:layout_marginStart="6dp"/>
+                tools:layout_marginStart="6dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -51,6 +53,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/clt"
+                    tools:ignore="TextContrastCheck"
                     tools:layout_marginEnd="9dp"
                     tools:layout_marginStart="9dp" />
 
@@ -179,17 +182,20 @@
                 android:layout_marginStart="6dp"
                 android:layout_marginEnd="6dp"
                 android:clickable="true"
+                android:contentDescription="@string/sharedesc"
                 app:srcCompat="@android:drawable/ic_menu_share"
-                tools:ignore="SpeakableTextPresentCheck" />
+                tools:ignore="SpeakableTextPresentCheck"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="7dp"
-                tools:srcCompat="@tools:sample/avatars"
                 tools:layout_marginEnd="6dp"
-                tools:layout_marginStart="6dp"/>
+                tools:layout_marginStart="6dp"
+                tools:srcCompat="@drawable/ic_launcher_foreground"
+                android:contentDescription="@string/qrloc"/>
 
             <TextView
                 android:id="@+id/copyr"
